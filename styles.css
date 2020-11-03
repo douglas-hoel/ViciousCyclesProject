@@ -14,9 +14,9 @@ aside{
 {
     position: absolute;
     display: inline;
-    color: #010B5B;
-    margin-top: -12px;
-    font-size: 4em;
+    color: #f7f7f7;
+    margin-top: -6px;
+    font-size: 3em;
     text-align: center;
 }
 
@@ -107,3 +107,11 @@ footer {
     float: left;
     padding: 2vw;
 }
+
+div.input-fields{
+    display:grid;
+    grid-template-columns: max-content max-content;
+    grid-gap:5px;
+}
+
+

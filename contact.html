@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -29,14 +30,82 @@
         </li>
       </ul>
     </nav>
-    <h1 class="nav-title">Vicious Cycles</h1>
+    <h1 class="nav-title">Vicious Cycles
+      <i class="fa fa-bicycle"></i>
+    </h1>
   </aside>
-  <h2>Contact Coming Soon...</h2>
+  <h2>Contact Us</h2>
+  <!-- Customer Input Form Start -->
+  <form action="does-not-exist.php" id="email-form">
+    <div class="input-fields">
+      <!-- Input Fields -->
+      <label>First Name:</label>
+      <input type="text" />
+
+      <label>Last Name:</label>
+      <input type="text" />
+
+      <label>Email:</label>
+      <input type="text" />
+
+      <!-- Text Area Field -->
+      <label>Type your message here:</label>
+      <textarea rows="4" cols="50" name="comment" form="email-form"></textarea>
+    </div>
+    <!-- Check Boxes -->
+    <p>What style of bike do you ride:</p>
+
+    <div>
+      <input type="checkbox" id="mountain" name="mountain" checked>
+      <label for="mountain">Mountain</label>
+    </div>
+    <div>
+      <input type="checkbox" id="road" name="road">
+      <label for="road">Road</label>
+    </div>
+    <div>
+        <input type="checkbox" id="hybrid" name="hybrid">
+        <label for="hybrid">Hybrid</label>
+      </div>
+    <div>
+      <input type="checkbox" id="touring" name="touring">
+      <label for="touring">Touring</label>
+    </div>
+
+    <!-- Radio Buttons -->
+    <p>What type of email is this:</p>
+    <input type="radio" id="question" name="email-type" value="question">
+    <label for="question">Question</label>
+    <br>
+    <input type="radio" id="praise" name="email-type" value="praise">
+    <label for="praise">Praise</label>
+    <br>
+    <input type="radio" id="complaint" name="email-type" value="complaint">
+    <label for="complaint">Complaint</label>
+    <br>
+    <br>
+    <label for="mailing-list">Choose which mailing list you would like to join:</label>
+    <select name="mailing-list" id="mailing-list">
+      <option value="mailing-list-mountain">Mountain Bikes</option>
+      <option value="mailing-list-road">Road Bikes</option>
+      <option value="mailing-list-hybrid">Hybrid Bikes</option>
+      <option value="mailing-list-touring">Touring Bikes</option>
+      <option value="mailing-list-sales">Sales</option>
+      <option value="mailing-list-clearance">Clearance</option>
+    </select>
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+
+  </form>
+  <!-- Customer Input Form End -->
   <footer>
     <p class="footer-text">Doug Hoelzel &copy;</p>
     <p class="footer-text">
       <a href="mailto:dbhoelzel@my.waketech.edu">Email</a>
     </p>
+    <a class="fa fa-facebook" href="https://www.facebook.com/" target="_blank"></a>
+    <a class="fa fa-twitter" href="https://twitter.com/" target="_blank"></a>
   </footer>
 </body>
 
